@@ -12,7 +12,7 @@
 To install the SDK in your project you need to require the package via [composer](http://getcomposer.org):
 
 ```bash
-composer require hcgcloud/pterodactyl-sdk
+composer require mg_100/pterodactyl-sdk
 ```
 
 Then use Composer's autoload unless you are using a framework that support composer autoload:

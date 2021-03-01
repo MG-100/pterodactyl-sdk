@@ -1,18 +1,18 @@
 <?php
 
-namespace HCGCloud\Pterodactyl;
+namespace mg_100\Pterodactyl;
 
 use GuzzleHttp\Client as Client;
-use HCGCloud\Pterodactyl\Exceptions\InvaildApiTypeException;
-use HCGCloud\Pterodactyl\Managers\AccountManager;
-use HCGCloud\Pterodactyl\Managers\LocationManager;
-use HCGCloud\Pterodactyl\Managers\Nest\NestEggManager;
-use HCGCloud\Pterodactyl\Managers\NestManager;
-use HCGCloud\Pterodactyl\Managers\Node\NodeAllocationManager;
-use HCGCloud\Pterodactyl\Managers\NodeManager;
-use HCGCloud\Pterodactyl\Managers\Server\ServerDatabaseManager;
-use HCGCloud\Pterodactyl\Managers\ServerManager;
-use HCGCloud\Pterodactyl\Managers\UserManager;
+use mg_100\Pterodactyl\Exceptions\InvaildApiTypeException;
+use mg_100\Pterodactyl\Managers\AccountManager;
+use mg_100\Pterodactyl\Managers\LocationManager;
+use mg_100\Pterodactyl\Managers\Nest\NestEggManager;
+use mg_100\Pterodactyl\Managers\NestManager;
+use mg_100\Pterodactyl\Managers\Node\NodeAllocationManager;
+use mg_100\Pterodactyl\Managers\NodeManager;
+use mg_100\Pterodactyl\Managers\Server\ServerDatabaseManager;
+use mg_100\Pterodactyl\Managers\ServerManager;
+use mg_100\Pterodactyl\Managers\UserManager;
 
 class Pterodactyl
 {

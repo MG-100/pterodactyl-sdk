@@ -1,9 +1,9 @@
 <?php
 
-namespace HCGCloud\Pterodactyl\Resources;
+namespace mg_100\Pterodactyl\Resources;
 
 use ArrayAccess;
-use HCGCloud\Pterodactyl\Pterodactyl;
+use mg_100\Pterodactyl\Pterodactyl;
 use JsonSerializable;
 use Serializable;
 

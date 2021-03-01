@@ -1,5 +1,5 @@
 {
-    "name": "hcgcloud/pterodactyl-sdk",
+    "name": "mg_100/pterodactyl-sdk",
     "description": "Pterodactyl PHP SDK",
     "keywords": ["pterodactyl", "sdk", "php"],
     "license": "MIT",
@@ -11,6 +11,10 @@
         {
             "name": "TLingC",
             "email": "my@tlingc.com"
+        },
+        {
+            "name": "Alex G:",
+            "email": "admin@mg100.net"
         }
     ],
     "require": {
@@ -23,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "HCGCloud\\Pterodactyl\\": "src/"
+            "mg_100\\Pterodactyl\\": "src/"
         }
     },
     "prefer-stable": true

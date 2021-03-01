@@ -1,9 +1,9 @@
 <?php
 
-namespace HCGCloud\Pterodactyl\Managers;
+namespace mg_100\Pterodactyl\Managers;
 
-use HCGCloud\Pterodactyl\Resources\SystemPermissions;
-use HCGCloud\Pterodactyl\Resources\User;
+use mg_100\Pterodactyl\Resources\SystemPermissions;
+use mg_100\Pterodactyl\Resources\User;
 
 class AccountManager extends Manager
 {

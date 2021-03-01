@@ -1,9 +1,9 @@
 <?php
 
-namespace HCGCloud\Pterodactyl\Managers;
+namespace mg_100\Pterodactyl\Managers;
 
-use HCGCloud\Pterodactyl\Http;
-use HCGCloud\Pterodactyl\Pterodactyl;
+use mg_100\Pterodactyl\Http;
+use mg_100\Pterodactyl\Pterodactyl;
 
 class Manager
 {

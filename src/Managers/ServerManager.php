@@ -1,10 +1,10 @@
 <?php
 
-namespace HCGCloud\Pterodactyl\Managers;
+namespace mg_100\Pterodactyl\Managers;
 
-use HCGCloud\Pterodactyl\Resources\Collection;
-use HCGCloud\Pterodactyl\Resources\Server;
-use HCGCloud\Pterodactyl\Resources\Stats;
+use mg_100\Pterodactyl\Resources\Collection;
+use mg_100\Pterodactyl\Resources\Server;
+use mg_100\Pterodactyl\Resources\Stats;
 
 class ServerManager extends Manager
 {

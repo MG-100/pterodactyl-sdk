@@ -1,13 +1,13 @@
 <?php
 
-namespace HCGCloud\Pterodactyl;
+namespace mg_100\Pterodactyl;
 
 use GuzzleHttp\Client;
-use HCGCloud\Pterodactyl\Exceptions\AccessDeniedHttpException;
-use HCGCloud\Pterodactyl\Exceptions\FailedActionException;
-use HCGCloud\Pterodactyl\Exceptions\NotFoundException;
-use HCGCloud\Pterodactyl\Exceptions\TimeoutException;
-use HCGCloud\Pterodactyl\Exceptions\ValidationException;
+use mg_100\Pterodactyl\Exceptions\AccessDeniedHttpException;
+use mg_100\Pterodactyl\Exceptions\FailedActionException;
+use mg_100\Pterodactyl\Exceptions\NotFoundException;
+use mg_100\Pterodactyl\Exceptions\TimeoutException;
+use mg_100\Pterodactyl\Exceptions\ValidationException;
 use Psr\Http\Message\ResponseInterface;
 
 class Http

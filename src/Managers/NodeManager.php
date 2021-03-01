@@ -1,9 +1,9 @@
 <?php
 
-namespace HCGCloud\Pterodactyl\Managers;
+namespace mg_100\Pterodactyl\Managers;
 
-use HCGCloud\Pterodactyl\Resources\Collection;
-use HCGCloud\Pterodactyl\Resources\Node;
+use mg_100\Pterodactyl\Resources\Collection;
+use mg_100\Pterodactyl\Resources\Node;
 
 class NodeManager extends Manager
 {

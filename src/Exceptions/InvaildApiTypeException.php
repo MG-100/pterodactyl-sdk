@@ -1,6 +1,6 @@
 <?php
 
-namespace HCGCloud\Pterodactyl\Exceptions;
+namespace mg_100\Pterodactyl\Exceptions;
 
 use Exception;
 
