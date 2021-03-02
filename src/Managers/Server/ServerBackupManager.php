@@ -3,7 +3,6 @@
 namespace mg_100\Pterodactyl\Managers\Server;
 
 use mg_100\Pterodactyl\Managers\Manager;
-use mg_100\Pterodactyl\Resources\Collection;
 use mg_100\Pterodactyl\Resources\Backup;
 use mg_100\Pterodactyl\Resources\User;
 
@@ -11,28 +10,13 @@ class ServerBackupManager extends Manager
 {
 
     /**
-     * Get a paginated collection of users.
-     *
-     * @param int   $page
-     * @param array $query
-     *
-     * @return Collection
-     */
-    public function paginate(int $page = 1, array $query = [])
-    {
-        return $this->http->get('users', array_merge([
-            'page' => $page,
-        ], $query));
-    }
-
-    /**
-     * Get a user instance by user id.
+     * Get a Backup by server id.
      *
      * @param mixed   $backupId
      * @param mixed   $serverId
      * @param array $query
      *
-     * @return User
+     * @return void
      */
     public function get($backupId, $serverId, array $query = [])
     {
@@ -40,12 +24,12 @@ class ServerBackupManager extends Manager
     }
 
     /**
-     * Create a new user.
+     * Create a new Backup.
      *
      * @param mixed $serverId
      * @param array $data
      *
-     * @return User
+     * @return void
      */
     public function create($serverId, array $data)
     {
@@ -53,7 +37,20 @@ class ServerBackupManager extends Manager
     }
 
     /**
-     * Delete the given user.
+     * Get a download link for the backup by server id.
+     *
+     * @param mixed   $backupId
+     * @param mixed   $serverId
+     *
+     * @return void
+     */
+    public function download($backupId, $serverId)
+    {
+        return $this->http->get("servers/$serverId/backups/$backupId/download");
+    }
+
+    /**
+     * Delete the given Backup.
      *
      * @param mixed $serverId
      * @param mixed $backupId
@@ -62,7 +59,7 @@ class ServerBackupManager extends Manager
      */
     public function delete($serverId, $backupId)
     {
-        return $this->http->delete("servers/$serverId/backups/$backupId", $query);
+        return $this->http->delete("servers/$serverId/backups/$backupId");
     }
 
 }
